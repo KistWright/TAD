@@ -1,3 +1,4 @@
+html
 <!DOCTYPE html>
 <html lang="gd">
 <head>
@@ -54,7 +55,7 @@
       position: relative;
     }
 
-    /* HEADER: TEXT + LOGO RIGHT */
+    /* HEADER: TEXT + LOGO RIGHT (row-reverse) */
     .header-row {
       display: flex;
       align-items: flex-start;
@@ -113,10 +114,10 @@
       line-height: 1.4;
     }
 
-    /* NEW: FOOTER CAPTCHA BOX */
+    /* FOOTER CAPTCHA BOX */
     .captcha-footer {
       text-align: center;
-      padding: 0.3rem 0;
+      padding: 2rem 0;
       margin-top: 1rem;
     }
 
@@ -125,6 +126,7 @@
       h1 { font-size: 1.4rem; }
       h2 { font-size: 1rem; }
       .panel-logo { width: 150px; }
+      .content { padding: 2rem 1.5rem 2.25rem; }
     }
   </style>
 </head>
@@ -179,7 +181,7 @@
         </section>
       </div>
 
-      <!-- NEW: CENTERED CAPTCHA FOOTER -->
+      <!-- CENTERED CAPTCHA FOOTER -->
       <div class="captcha-footer">
         ::CAPTCHA_BOX::
       </div>
