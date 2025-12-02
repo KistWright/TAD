@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="gd">
+<head>
+  <meta charset="UTF-8" />
+  <title>Tobar an Dualchais / Kist o Riches – Obair-chàraidh / Maintenance</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    :root {
+      --tad-teal: #007f9b;
+      --tad-dark: #004255;
+      --tad-light: #f4f7f8;
+      --tad-accent: #e85f3b;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: var(--tad-dark);
+      color: #ffffff;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .wrapper {
+      width: 100%;
+      max-width: 960px;
+      margin: 1.5rem;
+      border-radius: 8px;
+      overflow: hidden;
+      background: #000;
+      box-shadow: 0 22px 40px rgba(0,0,0,0.35);
+    }
+
+    /* HERO IMAGE */
+    .blacksmith {
+      position: relative;
+      height: 260px;
+      background-image:
+        linear-gradient(to bottom, rgba(0,0,0,0.05), rgba(0,0,0,0.9)),
+        url("https://www.scottisharchives.org.uk/wp-content/uploads/2018/09/BVIII_7gl_8781-1.jpg");
+      background-size: cover;
+      background-position: center 75%;
+    }
+
+    /* CONTENT PANEL */
+    .content {
+      background: var(--tad-light);
+      color: #1e1e1e;
+      padding: 2.5rem 7.5rem 2.75rem;
+      position: relative;
+    }
+
+    /* HEADER: TEXT + LOGO RIGHT */
+    .header-row {
+      display: flex;
+      align-items: flex-start;
+      flex-direction: row-reverse;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    .panel-logo {
+      width: 180px;
+      height: auto;
+      flex-shrink: 0;
+    }
+
+    .title-block {
+      flex: 1;
+      min-width: 250px;
+    }
+
+    .title {
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      font-size: 1rem;
+      font-weight: bold;
+      color: var(--tad-teal);
+      margin-bottom: 0.5rem;
+    }
+
+    h1 {
+      font-size: 2.4rem;
+      font-weight: 600;
+      color: var(--tad-dark);
+      margin-bottom: 0.3rem;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      font-weight: 400;
+      margin-bottom: 1.25rem;
+      color: var(--tad-dark);
+    }
+
+    .languages {
+      display: grid;
+      grid-template-columns: 2fr 2fr;
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    p { line-height: 1.6; margin-bottom: 0.8rem; }
+
+    /* Smaller text for contact details */
+    .languages section.contact {
+      font-size: 0.8rem;
+      line-height: 1.4;
+    }
+
+    /* NEW: FOOTER CAPTCHA BOX */
+    .captcha-footer {
+      text-align: center;
+      padding: 0.3rem 0;
+      margin-top: 1rem;
+    }
+
+    @media (max-width: 700px) {
+      .languages { grid-template-columns: 1fr; }
+      h1 { font-size: 1.4rem; }
+      h2 { font-size: 1rem; }
+      .panel-logo { width: 150px; }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <div class="blacksmith"></div>
+
+    <div class="content">
+
+      <div class="header-row">
+        <img
+          class="panel-logo"
+          src="http://tadtranscriptions.co.uk/wp-content/uploads/2022/02/cropped-Tobar-Kist-strapline-237x134.png"
+          alt="Tobar an Dualchais / Kist o Riches">
+
+        <div class="title-block">
+          <div class="title">Obair-chàraidh · Site Maintenance</div>
+          <h1>Obair-chàraidh air an làrach</h1>
+          <h2>Site temporarily unavailable</h2>
+        </div>
+      </div>
+
+      <div class="languages">
+        <section>
+          <p>
+            Tha sinn a’ dèanamh beagan obair-chàraidh air an làrach aig an àm seo.
+            Bidh sinn air ais cho luath ’s a ghabhas. Tapadh leibh airson ur foighidinn agus taic.
+          </p>
+        </section>
+
+        <section>
+          <p>
+            We’re currently performing some maintenance on the site.
+            We’ll be back as soon as possible. Thank you for your patience and support.
+          </p>
+        </section>
+
+        <section class="contact">
+          <p>
+            Ma dh’fheumas tu fios a chur chun an sgioba, cuir post-d thugainn:
+            <a href="mailto:dualchas@smo.uhi.ac.uk">dualchas@smo.uhi.ac.uk</a>.
+          </p>
+        </section>
+
+        <section class="contact">
+          <p>
+            If you need to contact the team meanwhile, please email:
+            <a href="mailto:dualchas@smo.uhi.ac.uk">dualchas@smo.uhi.ac.uk</a>.
+          </p>
+        </section>
+      </div>
+
+      <!-- NEW: CENTERED CAPTCHA FOOTER -->
+      <div class="captcha-footer">
+        ::CAPTCHA_BOX::
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>
